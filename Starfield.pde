@@ -134,8 +134,8 @@ void move() {
   yExplode = yExplode +((int)(Math.random()*5)-2)*(speedExplode);
 }
 void show() {
-fill(0,255,255);
-ellipse((float)xExplode,(float)yExplode,50,50);
+fill(255,255,0);
+ellipse((float)xExplode,(float)yExplode,5,5);
 }
 }
 

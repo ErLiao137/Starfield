@@ -36,17 +36,17 @@ void setup() {
   size(600, 600);
   noStroke();
   background(0);
-  boom = new explodeShape[50];
-  bah = new starShape[50];
-  bleh = new spiralShape[50];
-  biii = new gridShape[50];
+  boom = new explodeShape[100];
+  bah = new starShape[100];
+  bleh = new spiralShape[100];
+  biii = new gridShape[100];
   for (int i = 0; i < boom.length; i++) {
     boom[i] = new explodeShape(x,y);
     bah[i] = new starShape(x,y);
     bleh[i] = new spiralShape(x,y);
     biii[i] = new gridShape((int)x,(int)y);
 }
-for(int i = 40; i < boom.length; i++) {
+for(int i = 180; i < boom.length; i++) {
     boom[i] = new oddExplode( x, y);
   }
 }
